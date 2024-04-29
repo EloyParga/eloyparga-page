@@ -1,0 +1,744 @@
+*{
+    color: #f3f3f3 ;
+}
+
+
+html{
+    height: 100%;
+    margin: 0;
+    font-family: Roboto;
+    background-color: #1A1A1B; /* Color de fondo similar al de la imagen */
+    color: #D7DADC;
+    text-decoration: none;
+
+    
+}
+
+b{
+    color: #af09fc;
+}
+
+p{
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+h2{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+a{  
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+svg{
+    width: 20px;
+    fill: #868686;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(22, 25, 29 , 65%);
+    backdrop-filter: blur(2px);
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+}
+
+
+nav img.logo {
+    height: 30px; /* Ajusta la altura según tus necesidades */
+    padding: 5px;
+}
+nav img.logo:hover {
+    background-color:  #555454;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+nav .toggle {
+    fill: #D7DADC;
+    height: 30px; /* Ajusta la altura según tus necesidades */
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+}
+
+nav .toggle:hover {
+    background-color:  #555454;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+
+header{
+    margin: auto;
+    width: 655px;
+    max-width: 100%;
+}
+
+.container {
+    width: 655px;
+    height: 220px;
+    --s: 200px; /* control the size */
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+  
+    background: repeating-conic-gradient(
+          from 30deg,
+          #0000 0 120deg,
+          var(--c3) 0 180deg
+        )
+        calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+      repeating-conic-gradient(
+        from 30deg,
+        var(--c1) 0 60deg,
+        var(--c2) 0 120deg,
+        var(--c3) 0 180deg
+      );
+    background-size: var(--s) calc(var(--s) * 0.577);
+  }
+  
+
+.banner-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.banner{
+    width: 100%;  /* Ancho del div */
+    height: 220px;
+    max-width: 655px;
+    border: 1px solid #000; /* Opcional: un borde para visualizar mejor el div */
+    object-fit: cover;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    
+}
+
+.avatar-container{
+    display: flex;
+    position: relative;
+    margin-top: -80px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:20px ;
+    padding-right:20px ;
+}
+
+.avatar-container img.avatar{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 4px solid #f3f3f3;
+}
+
+.follow-btn {
+    height: 20px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #af09fc;
+    color: #f3f3f3;
+    border-radius: 40px;
+    margin-top: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+h1 {
+    color: #FFFFFF;
+    margin: 0.5rem 0;
+    font-size: 35px;
+}
+
+.verificado{
+    fill: #af09fc;
+}
+
+.about-txt {
+    text-align: start;
+    margin-bottom: 0.5rem;
+
+    p{
+        margin-bottom: 15px;
+    }
+}
+
+/* SVG y otros elementos dentro de .about-container */
+
+.dates-container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.dates-container svg {
+    width: 20px;
+    fill: #868686;
+}
+
+.dates-container div {
+    
+    display: flex;
+    align-items: center;
+    margin: 0.25rem 0;
+    margin-right: 30px;
+    
+}
+
+.dates-container span {
+    margin-left: 0.5rem;
+    color: #868686;
+    
+}
+
+.links a{ 
+    direction: none;
+    text-decoration: none;
+    color: #af09fc;
+    font-weight: bold;
+}
+
+.links a:hover{
+    border-bottom: 4px solid #af09fc;
+}
+
+main{
+    margin: auto;
+    width: 655px;
+    max-width: 100%;
+}
+
+
+.menu-container{
+    display: flex;
+    justify-content: flex-start;
+}
+.menu-container ul{
+display: flex;
+flex-direction: row;
+padding-inline-start: 1rem;
+
+}
+
+.menu-container ul li{ 
+padding: 20px 10px 20px 10px;
+height: 20px;
+width: 135px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+font-weight: bold;
+
+    a{
+        color: #868686;
+    }
+}
+
+.menu-container ul li:hover{ 
+    background-color:  #46454546;
+
+}
+
+#inbox{
+    border-bottom:3px solid #af09fc;
+
+    a{
+        color: white;
+    }
+}
+.proyectos-container{
+    margin-top: 20px;
+}
+
+.py:hover{
+    background-color: #46454546;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.pinned{
+display: flex;
+flex-direction: row;
+margin-bottom: 20px;
+margin-left: 25px;
+
+svg{
+    width: 18px;
+    margin-right: 10px;
+}
+
+}
+.pinned p{
+    font-size: 12px;
+    font-family: sans-serif ;
+    color: #868686;
+}
+
+.img-autor-py{
+width: 50px;
+height: auto;    
+}
+
+.img-autor-py img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.py{
+    padding: 20px;
+}
+
+.proyecto{
+    display: flex;
+    
+    
+}
+.contenido-py{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.autor-container{
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.autor-container .autor{
+    margin-top: -1px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-bottom: 10px;
+
+    a{
+        font-weight: bold;
+        font-size: 18px;
+        margin-right: 10px;
+        
+        
+    }
+
+    span{
+        margin-right: 2px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #868686;
+    }
+
+    .span2{
+        width: 100%;
+        font-size: 12px;
+        color: #868686;
+    }
+    
+}
+
+.tag-container{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    
+
+    .tag{
+        height: auto;
+        min-width: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #ffffff46;
+        padding: 6px 6px 6px 6px;
+        justify-content: center;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+
+        p{
+            font-weight: 500;
+            font-size: 12px;
+        }
+    }
+
+    .tag img{
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .html{
+        width: 120px;
+    }
+
+    .css{
+        width: 110px;
+    }
+
+    .js{
+        width: 150px;
+    }
+}
+
+.py-name{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.py-txt{
+    margin-bottom: 25px;
+    max-width: 530px;
+}
+
+.img-py img{
+    width: 530px;
+    height: 350px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    margin-bottom: 5px;
+}
+
+.logos-inferiores-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    
+
+    a{  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+
+        svg{
+            fill: none;
+        }
+    }
+    a:hover{
+
+        svg{
+            stroke: #af09fc;
+        }
+    }
+    
+   
+
+}
+
+ol{
+    list-style: none;
+    margin-top: 25px;
+    position: relative;
+}
+
+.exp-content{
+    padding-bottom: 15px;
+    display: grid;
+    margin-left: 3rem ;
+    margin-right: 15px;
+    position: relative;    
+}
+
+.exp-content::before{
+    content: "";
+    position: absolute;
+    top: 0;    
+    background-color: #8686864f;
+    border-left-width: 2px;
+    height: 100%;
+    width: 2px;
+    left: -35px;
+} 
+
+.empresa-container{
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.empresa{
+    top:0;
+    position: sticky;
+
+    span{
+        color: #af09fc;
+        font-size: 3.2rem;
+        line-height: 1;
+        border-radius: 9999px;
+        position: absolute;
+        left: -42px;
+        -webkit-border-radius: 9999px;
+        -moz-border-radius: 9999px;
+        -ms-border-radius: 9999px;
+        -o-border-radius: 9999px;
+    }
+
+    h2{ 
+        color: #af09fc;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+    }
+
+    h3{
+        margin: 0%;
+        margin-bottom: 10px;
+    }
+
+    time{
+        color: #D7DADC;
+        font-size: 14px;
+        
+    }
+}
+
+.exp-txt p{
+    padding-bottom: 1rem;
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    position: relative;
+}
+
+.aboutme-container{
+    
+
+}
+
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 16px;
+    
+    
+    
+}
+
+.about-title{
+    margin-top: 20px;
+    width: 100%;
+}
+.about-txt{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.about-img{
+    width: 100%;
+   display: flex;
+   justify-content: center;   
+   
+}
+
+/* CSS PARTE CONTACTO */
+/* FORMULARIO DE CONTACTO */
+
+.contact-form{
+    display: flex;
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.contact-form:hover{
+    background-color: #46454546
+}
+
+details{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4e4f51;
+}
+
+
+
+/* Estilo para el elemento summary */
+ summary {
+    padding-left:10px;
+    padding-right: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    svg{
+        width: 28px;
+        fill: #af09fc;
+    }
+}
+
+.form-content form{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+
+    label{
+        margin-bottom: 10px;
+    }
+
+    input{
+        width: 98%;
+        height: 30px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border: none;
+}
+    textarea{
+        width: 98%;
+        height: 6rem;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .env-form{
+        width: 100%;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+
+        input{
+            height: 40px;
+            width: 50%;
+            border-radius: 50px;
+            background-color: #af09fc;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+}
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+footer a svg{
+    fill: none;
+    width: 35px;
+    height: auto;
+    stroke-width:"1.3";
+
+    a{  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+
+        svg{
+            fill: none;
+        }
+    }
+}
+footer a:hover svg {
+    stroke: #af09fc 
+}
+footer p{
+    margin-top: 10px;
+}
+
+
+@media(max-width:650px){
+
+    
+}    
+
+
+
+
