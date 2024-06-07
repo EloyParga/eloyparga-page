@@ -10,17 +10,20 @@
 
 
 
-body, html {
+html,body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #e0e0e0;
+    text-decoration: none;
+    background-color: #1A1A1B; /* Color de fondo similar al de la imagen */
+
 }
 
 .mobile-card {
     height: 100%;
     max-width: 100%;
-    background-color: white;
+    background-color: #1A1A1B;
     font-size: 14px;
     color: #333;
 }
@@ -52,14 +55,13 @@ body, html {
 }
 
 .card-header {
-    background-color: #1f2e52;
-    color: #ebc224;
+    color: #7c56c3;
     text-align: center;
     padding: 40px;
     margin-bottom: 5px;
     position: relative;
 
-    background-image: linear-gradient(rgba(31, 46, 82, 0.8), rgba(31, 46, 82, 0.7)), url('img/back-header.png');
+    background-image: linear-gradient(rgba(71, 47, 116, 0.2), rgba(71, 47, 116,.7)), url('/img/banner.png');
     background-position: center; /* Centra la imagen de fondo en el div */
     background-size: cover; /* Esto hará que la imagen de fondo cubra todo el div */
     background-repeat: no-repeat;
@@ -85,7 +87,7 @@ body, html {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 4px solid #ebc224;
+    border: 4px solid #7c56c3;
     margin-top: 15px;
     margin-bottom: 15px;
     display: block; /* Asegura que la imagen sea un bloque y por ende, centrada */
@@ -198,16 +200,10 @@ img {
     padding: 20px;
 }
 
-.banner {
-    background-color: #192542;
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente (si quieres que también esté centrado verticalmente) */
-    height: 100px; /* Ajusta la altura según necesites */
-  }
+
 
 .accordion {
-    background-color: #1f2e52;
+    background-color: #7c56c3;
     color: #fff;
     cursor: pointer;
     padding: 18px;
@@ -217,6 +213,8 @@ img {
     outline: none;
     transition: 0.4s;
     margin-top: 10px; /* Añade espaciado entre botones si es necesario */
+
+    
 }
 
 .active, .accordion:hover {

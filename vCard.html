@@ -11,7 +11,7 @@
     <meta property="og:image" content="https://vcard.ingeniumsl.com/img/eloy-perfil.jpg" />
         <!-- ... más etiquetas ... -->
     
-    <title>Eloy Parga - Ingenium SL</title>
+    <title>Eloy Parga - vCard</title>
 
     <link rel="icon" href="/img/icon-web.png" type="image/x-icon">
 
@@ -23,17 +23,17 @@
 <body>
     <div class="mobile-card">
         <section class="card-header">
-            <h1 class="consultant-name">Eloy Parga</h1>
-            <img class="profile-img" src="/img/eloy-perfil.jpg" alt="Eloy Parga">
-            <h2 >Front-End Developer</h2>
-            <p>Departamento I+D</p>
+            <!--<h1 class="consultant-name">Eloy Parga</h1>-->
+            <img class="profile-img" src="/img/foto-perfil.png" alt="Eloy Parga">
+            <!--<h2 >Front-End Developer</h2>-->
+            <p></p>
         </section>
         <section class="card-content">
             <div class="contact-buttons">
-                <a href="tel:+34684611671" class="button phone"><i class="fa fa-phone"></i> Llama por Teléfono</a>
-                <a href="mailto:eloy@ingeniumsl.com" class="button email"><i class="fa fa-envelope"></i> Escríbeme por Email</a>
-                <a href="https://web.ingeniumsl.com/website/" class="button web"><i class="fa fa-globe"></i> Visita nuestra WEB</a>
-                <a class="button contact" onclick="mostrarOcultar()"><i class="fa-solid fa-id-card"></i>Guarda contacto</a>
+                <a href="tel:+34684611671" class="button phone"><i class="fa fa-phone"></i> Teléfono</a>
+                <a href="mailto:eloy@ingeniumsl.com" class="button email"><i class="fa fa-envelope"></i> Email</a>
+                <a href="https://web.ingeniumsl.com/website/" class="button web"><i class="fa fa-globe"></i> WEB</a>
+                <a class="button contact" onclick="mostrarOcultar()"><i class="fa-solid fa-id-card"></i>Contacto</a>
                 <div class="pop" id="aviso" onclick="event.stopPropagation();">
                     <div onclick="event.stopPropagation();">
                         <div class="pop-content" onclick="event.stopPropagation();">
@@ -53,23 +53,18 @@
         </section>
         
         <section class="services-section">
-            <h2>Datos Empresa </h2>
+            <h2>Datos Personales </h2>
 
             
-            <div class="banner">
-                <a href="https://maps.app.goo.gl/Hd5ZYuz83Fc9XhfK7"><img src="/img/logo-Horizontal.svg" alt="banner Ingenium"></a>
-            </div>
-            <button class="accordion">Horarios</button>
+            
+            <button class="accordion">Quien Soy</button>
             <div class="panel">
                 <p> <b>Lunes a Jueves:</b>  9:00 a 18:00</p>
                 <p> <b>Viernes:</b> 9:00 a 15:00</p>
                 <p>Hora Madrid-España (GMT+1h)</p>
             </div>
-            <button class="accordion">Contacto</button>
-            <div class="panel">
-                <p> <i class="fa fa-phone"></i> (+34) 985 118 859</p>
-                <p> <i class="fa fa-envelope"></i> ingenium@ingeniumsl.com</p>
-            </div>
+            <a href="/docs/CV-Eloy-2024.pdf" target="_blank"><button class="accordion" >CV</button></a>
+            
         </section>
 
         <section class="location-section">
@@ -120,7 +115,7 @@
         
     </div>
 
-    <script src="../scripts.js"></script>
+    <script src="/scripts/scripts-vcard.js"></script>
 
 </body>
 
