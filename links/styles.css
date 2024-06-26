@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+
+header {
+    background-color: #161b22;
+    padding: 20px 0;
+}
+
+a{
+    text-decoration: none;
+    color: #c9d1d9;
+    
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #af09fc;
+}
+
+main {
+    padding: 40px 0;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.profile h1 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.profile p {
+    color: #8b949e;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #8b949e;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.courses, .more {
+    margin-top: 40px;
+}
+
+.courses h2, .more h2 {
+    font-size: 28px;
+    border-bottom: 2px solid #30363d;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.course-card, .more-card {
+    background-color: #161b22;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.course-card h3, .more-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.course-card p, .more-card p {
+    color: #8b949e;
+}
+
+.more-card.highlighted {
+    background-color: #238636;
+    color: white;
+}
+
+footer {
+    background-color: #161b22;
+    padding: 20px 0;
+    text-align: center;
+    color: #8b949e;
+}
