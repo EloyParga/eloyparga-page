@@ -37,5 +37,17 @@ function setupInbox() {
     });
 }
 
+// Selecciona todos los elementos 'li' dentro del contenedor de menú
+document.querySelectorAll('.menu-container li').forEach(li => {
+    li.addEventListener('click', function(event) {
+        // Esto verifica si el clic fue directamente sobre el 'li', y no sobre el 'a'
+        if (event.target === this) {
+            // Encuentra el enlace dentro del 'li' y simula un clic en él
+            this.querySelector('a').click();
+        }
+    });
+});
+
+
 document.addEventListener("DOMContentLoaded", setupInbox);
 
