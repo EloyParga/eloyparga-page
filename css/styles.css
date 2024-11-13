@@ -59,6 +59,13 @@ nav {
     left: 0;
 }
 
+input {
+    color: #000;
+}
+
+textarea{
+    color: #000;
+}
 .icon-luna {
     filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(180deg) brightness(90%);
     height: 20px; /* Ajusta la altura según tus necesidades */
