@@ -201,6 +201,7 @@
             </div>
 
         </section>
+
         <section class="exp-container" id="exp-container" style="display: none;">
            
             <ol >
@@ -275,7 +276,7 @@
     
                     <div class="contenido-py">
                         <div class="autor-container">
-                            <p class="autor"><a href="">EloyParga</a> 
+                            <p class="autor"><a href="">EloyParga</a></p>
                         </div>
  
                         <div class="py-txt">
@@ -348,17 +349,22 @@
                                         </summary>
 
                                         <div id="form-content" class="form-content">
-                                            <form id="Form">
+                                            <form id="Form" action="https://formspree.io/f/manylybn" method="POST">
                                                 <label for="name">Nombre:</label>
-                                                <input type="text" id="name" name="name"><br>
+                                                <input type="text" id="name" name="name" required><br>
+
                                                 <label for="email">Correo electrónico:</label>
-                                                <input type="email" id="email" name="email"><br>
+                                                <input type="email" id="email" name="email" required><br>
+
                                                 <label for="number">Telefono de contacto</label>
-                                                <input type="number" id="number" name="number"><br>
+                                                <input type="number" id="number" name="number" required><br>
+
                                                 <label for="asunto">Asunto:</label>
-                                                <input type="text" id="asunto" name="asunto"><br>
+                                                <input type="text" id="asunto" name="asunto" required><br>
+
                                                 <label for="mensaje">Mensaje:</label>
-                                                <textarea type="text" id="mensaje" name="mensaje"></textarea><br>
+                                                <textarea type="text" id="mensaje" name="mensaje" required></textarea><br>
+
                                                 <div class="env-form">
                                                     <input class="follow-btn" type="submit" value="Enviar" >
                                                 </div>
